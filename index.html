@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For the Sweetest Girl ♡</title>
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
-
-
 /* ========================================
    BASIC WEBSITE SETTINGS
 ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
 
 :root {
     --pink: #f7b8d0;
@@ -1066,63 +1068,49 @@ footer {
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-/* ========================================
-   BACKGROUND MUSIC
-======================================== */
+<!-- ========================================
+     BACKGROUND MUSIC
+======================================== -->
 
-const bgMusic = document.getElementById("bgMusic");
-const musicText = document.getElementById("musicText");
-const musicButton = document.querySelector(".music-btn");
+<audio
+    id="bgMusic"
+    loop
+>
 
-async function toggleMusic() {
+    <source
+        src="music/song.mp3"
+        type="audio/mpeg"
+    >
 
-    if (bgMusic.paused) {
+</audio>
 
-        try {
 
-            await bgMusic.play();
+<!-- ========================================
+     MUSIC BUTTON
+======================================== -->
 
-            musicText.textContent =
-                "Playing our song ♡";
+<button
+    class="music-btn"
+    onclick="toggleMusic()"
+>
 
-            musicButton.classList.add(
-                "playing"
-            );
+    🎵
 
-        } catch (error) {
+    <span id="musicText">
+        Play our song ♡
+    </span>
 
-            console.log(
-                "Music could not play:",
-                error
-            );
+</button>
 
-            musicText.textContent =
-                "Music unavailable ♡";
 
-        }
 
-    } else {
-
-        bgMusic.pause();
-
-        musicText.textContent =
-            "Play our song ♡";
-
-        musicButton.classList.remove(
-            "playing"
-        );
-
-    }
-
-}
-
-   
 <!-- ========================================
      HOME
 ======================================== -->
@@ -1395,7 +1383,7 @@ async function toggleMusic() {
 
         <button
             class="btn secondary"
-            onclick="document.getElementById('letter').scrollIntoView()"
+            onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})"
         >
 
             There's more ♡
@@ -1531,7 +1519,7 @@ async function toggleMusic() {
 
         <button
             class="btn"
-            onclick="document.getElementById('future').scrollIntoView()"
+            onclick="document.getElementById('future').scrollIntoView({behavior:'smooth'})"
         >
 
             A little prayer ♡
@@ -1680,7 +1668,7 @@ async function toggleMusic() {
 
         <button
             class="btn"
-            onclick="document.getElementById('game').scrollIntoView()"
+            onclick="document.getElementById('game').scrollIntoView({behavior:'smooth'})"
         >
 
             One more surprise 🐾
@@ -2181,54 +2169,45 @@ const musicButton =
     );
 
 
-function toggleMusic() {
-
-
-    /* If music is currently stopped */
+async function toggleMusic() {
 
     if (
         bgMusic.paused
     ) {
 
+        try {
 
-        /* Start the song */
+            await bgMusic.play();
 
-        bgMusic.play();
+            musicText.textContent =
+                "Playing our song ♡";
 
+            musicButton.classList.add(
+                "playing"
+            );
 
-        /* Change button text */
+        }
 
-        musicText.textContent =
-            "Playing our song ♡";
+        catch (error) {
 
+            console.log(
+                "Music could not play:",
+                error
+            );
 
-        /* Change button appearance */
+            musicText.textContent =
+                "Music unavailable ♡";
 
-        musicButton.classList.add(
-            "playing"
-        );
-
+        }
 
     }
 
-
-    /* If music is currently playing */
-
     else {
-
-
-        /* Stop the song */
 
         bgMusic.pause();
 
-
-        /* Change button text */
-
         musicText.textContent =
             "Play our song ♡";
-
-
-        /* Change button appearance */
 
         musicButton.classList.remove(
             "playing"
@@ -2239,8 +2218,27 @@ function toggleMusic() {
 }
 
 
+/* ========================================
+   KEEP BUTTON STATE UPDATED
+======================================== */
+
+bgMusic.addEventListener(
+    "ended",
+    function() {
+
+        musicText.textContent =
+            "Play our song ♡";
+
+        musicButton.classList.remove(
+            "playing"
+        );
+
+    }
+);
+
 </script>
 
 
 </body>
+
 </html>
