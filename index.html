@@ -19,8 +19,38 @@
 <title>For the Sweetest Girl ♡</title>
 <style>
   
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=
+  .music-btn {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 1000;
 
+    background: rgba(255, 255, 255, 0.95);
+    color: #c85f8e;
+
+    border: 1px solid #f3c4d6;
+    border-radius: 999px;
+
+    padding: 11px 18px;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(200, 95, 142, 0.15);
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.music-btn:hover {
+    transform: translateY(-2px);
+}
+
+.music-btn.playing {
+    background: #c85f8e;
+    color: white;
+}
 :root{
   --pink:#f7b8d0;
   --light:#fff7fb;
