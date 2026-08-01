@@ -9,10 +9,8 @@
 <style>
 
 /* ========================================
-   BASIC WEBSITE SETTINGS
+   BASIC SETTINGS
 ======================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
 
 :root {
     --pink: #f7b8d0;
@@ -35,8 +33,13 @@ html {
 
 body {
     margin: 0;
-    font-family: "DM Sans", sans-serif;
-    color: var(--text);
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    color:
+        var(--text);
 
     background:
         linear-gradient(
@@ -49,14 +52,15 @@ body {
     overflow-x: hidden;
 }
 
-button {
+button,
+a {
     font: inherit;
     cursor: pointer;
 }
 
 
 /* ========================================
-   SPOTIFY MUSIC BUTTON
+   SPOTIFY BUTTON
 ======================================== */
 
 .music-btn {
@@ -68,34 +72,42 @@ button {
 
     z-index: 1000;
 
-    border: 1px solid #f3c4d6;
+    border:
+        1px solid
+        #f3c4d6;
 
     background:
-        rgba(255, 255, 255, 0.95);
+        rgba(
+            255,
+            255,
+            255,
+            0.95
+        );
 
-    color: var(--deep);
+    color:
+        var(--deep);
 
     padding:
         11px
         18px;
 
-    border-radius: 999px;
+    border-radius:
+        999px;
 
-    font-family:
-        "DM Sans",
-        sans-serif;
+    font-weight:
+        600;
 
-    font-weight: 600;
+    text-decoration:
+        none;
 
     box-shadow:
         0 8px 20px
-        rgba(200, 95, 142, 0.15);
-
-    cursor: pointer;
-
-    text-decoration: none;
-
-    display: inline-block;
+        rgba(
+            200,
+            95,
+            142,
+            0.15
+        );
 
     transition:
         0.25s;
@@ -111,7 +123,6 @@ button {
 
     color:
         white;
-
 }
 
 
@@ -121,37 +132,45 @@ button {
 
 .screen {
 
-    min-height: 100vh;
+    min-height:
+        100vh;
 
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
+    align-items:
+        center;
 
-    justify-content: center;
+    justify-content:
+        center;
 
     padding:
         28px
         18px;
 
-    position: relative;
+    position:
+        relative;
 }
 
 
 /* ========================================
-   MAIN CARDS
+   CARDS
 ======================================== */
 
 .card {
 
     width:
-        min(900px, 100%);
+        min(
+            900px,
+            100%
+        );
 
     background:
         rgba(
             255,
             255,
             255,
-            0.82
+            0.84
         );
 
     border:
@@ -198,8 +217,8 @@ h2 {
 h1 {
 
     font-family:
-        Pacifico,
-        cursive;
+        Georgia,
+        serif;
 
     font-size:
         clamp(
@@ -304,7 +323,9 @@ p {
         translateY(-3px);
 
     filter:
-        brightness(1.04);
+        brightness(
+            1.04
+        );
 
 }
 
@@ -621,7 +642,9 @@ p {
     50% {
 
         transform:
-            translateY(-8px);
+            translateY(
+                -8px
+            );
 
     }
 
@@ -629,7 +652,7 @@ p {
 
 
 /* ========================================
-   APPRECIATION PAW CARDS
+   APPRECIATION CARDS
 ======================================== */
 
 .paws {
@@ -716,7 +739,8 @@ p {
 
 }
 
-.paw.active .reveal {
+.paw.active
+.reveal {
 
     display:
         block;
@@ -768,7 +792,7 @@ p {
 
 
 /* ========================================
-   PRAYER / FUTURE SECTION
+   PRAYER
 ======================================== */
 
 .blessing {
@@ -797,7 +821,7 @@ p {
 
 
 /* ========================================
-   CAT CHOICE GAME
+   CAT GAME
 ======================================== */
 
 .cats-choice {
@@ -844,7 +868,9 @@ p {
 .choice:hover {
 
     transform:
-        scale(1.03);
+        scale(
+            1.03
+        );
 
 }
 
@@ -886,7 +912,7 @@ p {
 .final.show {
 
     display:
-        block;
+        flex;
 
     animation:
         pop
@@ -970,28 +996,8 @@ p {
 
 
 /* ========================================
-   OTHER DECORATION
+   FOOTER
 ======================================== */
-
-.sparkle {
-
-    font-size:
-        1.4rem;
-
-}
-
-.dots {
-
-    margin-top:
-        25px;
-
-    color:
-        #e78cae;
-
-    letter-spacing:
-        6px;
-
-}
 
 footer {
 
@@ -1011,11 +1017,12 @@ footer {
 
 
 /* ========================================
-   MOBILE PHONE
+   MOBILE
 ======================================== */
 
 @media (
-    max-width: 600px
+    max-width:
+    600px
 ) {
 
     .card {
@@ -1070,7 +1077,7 @@ footer {
 
 
 <!-- ========================================
-     SPOTIFY MUSIC BUTTON
+     SPOTIFY BUTTON
 ======================================== -->
 
 <a
@@ -1107,27 +1114,47 @@ footer {
                 🎀
             </div>
 
-            <div class="ear left"></div>
+            <div
+                class="ear left"
+            ></div>
 
-            <div class="ear right"></div>
+            <div
+                class="ear right"
+            ></div>
 
             <div class="head">
 
-                <div class="eye left"></div>
+                <div
+                    class="eye left"
+                ></div>
 
-                <div class="eye right"></div>
+                <div
+                    class="eye right"
+                ></div>
 
-                <div class="nose"></div>
+                <div
+                    class="nose"
+                ></div>
 
-                <div class="mouth"></div>
+                <div
+                    class="mouth"
+                ></div>
 
-                <div class="whisker w1"></div>
+                <div
+                    class="whisker w1"
+                ></div>
 
-                <div class="whisker w2"></div>
+                <div
+                    class="whisker w2"
+                ></div>
 
-                <div class="whisker w3"></div>
+                <div
+                    class="whisker w3"
+                ></div>
 
-                <div class="whisker w4"></div>
+                <div
+                    class="whisker w4"
+                ></div>
 
             </div>
 
@@ -1168,8 +1195,16 @@ footer {
         </button>
 
 
-        <div class="dots">
+        <div
+            style="
+                margin-top:25px;
+                color:#e78cae;
+                letter-spacing:6px;
+            "
+        >
+
             • • •
+
         </div>
 
 
@@ -1328,7 +1363,13 @@ footer {
 
         <button
             class="btn secondary"
-            onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})"
+            onclick="
+                document
+                .getElementById('letter')
+                .scrollIntoView({
+                    behavior:'smooth'
+                })
+            "
         >
 
             There's more ♡
@@ -1464,7 +1505,13 @@ footer {
 
         <button
             class="btn"
-            onclick="document.getElementById('future').scrollIntoView({behavior:'smooth'})"
+            onclick="
+                document
+                .getElementById('future')
+                .scrollIntoView({
+                    behavior:'smooth'
+                })
+            "
         >
 
             A little prayer ♡
@@ -1513,19 +1560,31 @@ footer {
                     🎀
                 </div>
 
-                <div class="ear left"></div>
+                <div
+                    class="ear left"
+                ></div>
 
-                <div class="ear right"></div>
+                <div
+                    class="ear right"
+                ></div>
 
                 <div class="head">
 
-                    <div class="eye left"></div>
+                    <div
+                        class="eye left"
+                    ></div>
 
-                    <div class="eye right"></div>
+                    <div
+                        class="eye right"
+                    ></div>
 
-                    <div class="nose"></div>
+                    <div
+                        class="nose"
+                    ></div>
 
-                    <div class="mouth"></div>
+                    <div
+                        class="mouth"
+                    ></div>
 
                 </div>
 
@@ -1601,7 +1660,13 @@ footer {
 
         <button
             class="btn"
-            onclick="document.getElementById('game').scrollIntoView({behavior:'smooth'})"
+            onclick="
+                document
+                .getElementById('game')
+                .scrollIntoView({
+                    behavior:'smooth'
+                })
+            "
         >
 
             One more surprise 🐾
@@ -1898,7 +1963,7 @@ footer {
 
 
 /* ========================================
-   OPEN APPRECIATION SECTION
+   OPEN APPRECIATION
 ======================================== */
 
 function openLetter() {
@@ -1962,7 +2027,7 @@ function chooseCat(i) {
 
 
 /* ========================================
-   SHOW FINAL MESSAGE
+   SHOW FINAL
 ======================================== */
 
 function showFinal() {
@@ -1998,66 +2063,69 @@ function hearts(n) {
         i++
     ) {
 
-        setTimeout(() => {
+        setTimeout(
+            () => {
 
-            const x =
-                document.createElement(
-                    'div'
+                const x =
+                    document.createElement(
+                        'div'
+                    );
+
+                x.className =
+                    'floating';
+
+                x.textContent =
+                    [
+                        '♡',
+                        '💗',
+                        '🎀',
+                        '✨',
+                        '🐾'
+                    ][
+                        Math.floor(
+                            Math.random()
+                            * 5
+                        )
+                    ];
+
+                x.style.left =
+                    Math.random()
+                    * 100
+                    + 'vw';
+
+                x.style.fontSize =
+                    (
+                        14
+                        +
+                        Math.random()
+                        * 22
+                    )
+                    + 'px';
+
+                x.style.animationDuration =
+                    (
+                        3
+                        +
+                        Math.random()
+                        * 3
+                    )
+                    + 's';
+
+                document
+                    .body
+                    .appendChild(
+                        x
+                    );
+
+                setTimeout(
+                    () =>
+                        x.remove(),
+                    6500
                 );
 
-            x.className =
-                'floating';
-
-            x.textContent =
-                [
-                    '♡',
-                    '💗',
-                    '🎀',
-                    '✨',
-                    '🐾'
-                ][
-                    Math.floor(
-                        Math.random()
-                        * 5
-                    )
-                ];
-
-            x.style.left =
-                Math.random()
-                * 100
-                + 'vw';
-
-            x.style.fontSize =
-                (
-                    14
-                    +
-                    Math.random()
-                    * 22
-                )
-                + 'px';
-
-            x.style.animationDuration =
-                (
-                    3
-                    +
-                    Math.random()
-                    * 3
-                )
-                + 's';
-
-            document
-                .body
-                .appendChild(x);
-
-
-            setTimeout(
-                () =>
-                    x.remove(),
-                6500
-            );
-
-
-        }, i * 100);
+            },
+            i * 100
+        );
 
     }
 
@@ -2080,6 +2148,7 @@ function celebrate() {
             "Okay, that's all. But you can never have too many hearts. ♡";
 
 }
+
 
 </script>
 
