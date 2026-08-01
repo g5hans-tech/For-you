@@ -1072,42 +1072,57 @@ footer {
 <body>
 
 
-<!-- ========================================
-     BACKGROUND MUSIC
-======================================== -->
+/* ========================================
+   BACKGROUND MUSIC
+======================================== */
 
-<audio
-    id="bgMusic"
-    loop
->
+const bgMusic = document.getElementById("bgMusic");
+const musicText = document.getElementById("musicText");
+const musicButton = document.querySelector(".music-btn");
 
-    <source
-        src="music/song.mp3"
-        type="audio/mpeg"
-    >
+async function toggleMusic() {
 
-</audio>
+    if (bgMusic.paused) {
 
+        try {
 
-<!-- ========================================
-     MUSIC BUTTON
-======================================== -->
+            await bgMusic.play();
 
-<button
-    class="music-btn"
-    onclick="toggleMusic()"
->
+            musicText.textContent =
+                "Playing our song ♡";
 
-    🎵
+            musicButton.classList.add(
+                "playing"
+            );
 
-    <span id="musicText">
-        Play our song ♡
-    </span>
+        } catch (error) {
 
-</button>
+            console.log(
+                "Music could not play:",
+                error
+            );
 
+            musicText.textContent =
+                "Music unavailable ♡";
 
+        }
 
+    } else {
+
+        bgMusic.pause();
+
+        musicText.textContent =
+            "Play our song ♡";
+
+        musicButton.classList.remove(
+            "playing"
+        );
+
+    }
+
+}
+
+   
 <!-- ========================================
      HOME
 ======================================== -->
