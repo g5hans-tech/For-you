@@ -8,9 +8,7 @@
 
 <style>
 
-/* ========================================
-   BASIC SETTINGS
-======================================== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
 
 :root {
     --pink: #f7b8d0;
@@ -19,8 +17,7 @@
     --text: #6f4c5d;
     --white: #ffffff;
 
-    --shadow:
-        0 18px 50px rgba(200, 95, 142, 0.16);
+    --shadow: 0 18px 50px rgba(200, 95, 142, 0.16);
 }
 
 * {
@@ -33,13 +30,8 @@ html {
 
 body {
     margin: 0;
-
-    font-family:
-        Arial,
-        sans-serif;
-
-    color:
-        var(--text);
+    font-family: "DM Sans", sans-serif;
+    color: var(--text);
 
     background:
         linear-gradient(
@@ -52,8 +44,7 @@ body {
     overflow-x: hidden;
 }
 
-button,
-a {
+button {
     font: inherit;
     cursor: pointer;
 }
@@ -72,57 +63,35 @@ a {
 
     z-index: 1000;
 
-    border:
-        1px solid
-        #f3c4d6;
+    border: 1px solid #f3c4d6;
 
-    background:
-        rgba(
-            255,
-            255,
-            255,
-            0.95
-        );
+    background: rgba(255, 255, 255, 0.95);
 
-    color:
-        var(--deep);
+    color: var(--deep);
 
-    padding:
-        11px
-        18px;
+    padding: 11px 18px;
 
-    border-radius:
-        999px;
+    border-radius: 999px;
 
-    font-weight:
-        600;
+    font-family: "DM Sans", sans-serif;
 
-    text-decoration:
-        none;
+    font-weight: 600;
 
     box-shadow:
         0 8px 20px
-        rgba(
-            200,
-            95,
-            142,
-            0.15
-        );
+        rgba(200, 95, 142, 0.15);
 
-    transition:
-        0.25s;
+    cursor: pointer;
+
+    transition: 0.25s;
 }
 
 .music-btn:hover {
+    transform: translateY(-2px);
+}
 
-    transform:
-        translateY(-2px);
-
-    background:
-        var(--deep);
-
-    color:
-        white;
+.music-btn:active {
+    transform: scale(0.96);
 }
 
 
@@ -132,45 +101,34 @@ a {
 
 .screen {
 
-    min-height:
-        100vh;
+    min-height: 100vh;
 
-    display:
-        flex;
+    display: flex;
 
-    align-items:
-        center;
+    align-items: center;
 
-    justify-content:
-        center;
+    justify-content: center;
 
-    padding:
-        28px
-        18px;
+    padding: 28px 18px;
 
-    position:
-        relative;
+    position: relative;
 }
 
 
 /* ========================================
-   CARDS
+   MAIN CARDS
 ======================================== */
 
 .card {
 
-    width:
-        min(
-            900px,
-            100%
-        );
+    width: min(900px, 100%);
 
     background:
         rgba(
             255,
             255,
             255,
-            0.84
+            0.82
         );
 
     border:
@@ -182,21 +140,15 @@ a {
             0.95
         );
 
-    border-radius:
-        34px;
+    border-radius: 34px;
 
-    box-shadow:
-        var(--shadow);
+    box-shadow: var(--shadow);
 
-    padding:
-        48px
-        28px;
+    padding: 48px 28px;
 
-    text-align:
-        center;
+    text-align: center;
 
-    backdrop-filter:
-        blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 
@@ -206,19 +158,14 @@ a {
 
 h1,
 h2 {
-
-    margin:
-        0
-        0
-        14px;
-
+    margin: 0 0 14px;
 }
 
 h1 {
 
     font-family:
-        Georgia,
-        serif;
+        Pacifico,
+        cursive;
 
     font-size:
         clamp(
@@ -227,12 +174,9 @@ h1 {
             5rem
         );
 
-    font-weight:
-        400;
+    font-weight: 400;
 
-    color:
-        var(--deep);
-
+    color: var(--deep);
 }
 
 h2 {
@@ -244,9 +188,7 @@ h2 {
             3rem
         );
 
-    color:
-        var(--deep);
-
+    color: var(--deep);
 }
 
 
@@ -256,27 +198,21 @@ h2 {
 
 p {
 
-    line-height:
-        1.8;
+    line-height: 1.8;
 
-    font-size:
-        1rem;
-
+    font-size: 1rem;
 }
 
 .subtitle {
 
-    font-size:
-        1.1rem;
+    font-size: 1.1rem;
 
-    max-width:
-        620px;
+    max-width: 620px;
 
     margin:
         0
         auto
         28px;
-
 }
 
 
@@ -286,21 +222,17 @@ p {
 
 .btn {
 
-    border:
-        0;
+    border: 0;
 
-    background:
-        var(--deep);
+    background: var(--deep);
 
-    color:
-        white;
+    color: white;
 
     padding:
         14px
         24px;
 
-    border-radius:
-        999px;
+    border-radius: 999px;
 
     box-shadow:
         0 8px
@@ -312,9 +244,7 @@ p {
             0.25
         );
 
-    transition:
-        0.2s;
-
+    transition: 0.2s;
 }
 
 .btn:hover {
@@ -323,24 +253,18 @@ p {
         translateY(-3px);
 
     filter:
-        brightness(
-            1.04
-        );
-
+        brightness(1.04);
 }
 
 .btn.secondary {
 
-    background:
-        white;
+    background: white;
 
-    color:
-        var(--deep);
+    color: var(--deep);
 
     border:
         1px solid
         #f2c4d7;
-
 }
 
 
@@ -350,38 +274,31 @@ p {
 
 .cat {
 
-    width:
-        150px;
+    width: 150px;
 
-    height:
-        120px;
+    height: 120px;
 
     margin:
         0
         auto
         25px;
 
-    position:
-        relative;
+    position: relative;
 
     animation:
         float
         3s
         ease-in-out
         infinite;
-
 }
 
 .cat .head {
 
-    width:
-        120px;
+    width: 120px;
 
-    height:
-        100px;
+    height: 100px;
 
-    background:
-        white;
+    background: white;
 
     border:
         4px
@@ -394,14 +311,11 @@ p {
         45%
         45%;
 
-    position:
-        absolute;
+    position: absolute;
 
-    left:
-        15px;
+    left: 15px;
 
-    top:
-        18px;
+    top: 18px;
 
     box-shadow:
         0 8px
@@ -412,130 +326,89 @@ p {
             142,
             0.12
         );
-
 }
 
 .ear {
 
-    width:
-        40px;
+    width: 40px;
 
-    height:
-        40px;
+    height: 40px;
 
-    background:
-        white;
+    background: white;
 
     border:
         4px
         solid
         #f1bfd2;
 
-    position:
-        absolute;
+    position: absolute;
 
-    top:
-        -12px;
+    top: -12px;
 
-    z-index:
-        -1;
+    z-index: -1;
 
-    transform:
-        rotate(45deg);
-
+    transform: rotate(45deg);
 }
 
 .ear.left {
-
-    left:
-        10px;
-
+    left: 10px;
 }
 
 .ear.right {
-
-    right:
-        10px;
-
+    right: 10px;
 }
 
 .eye {
 
-    width:
-        10px;
+    width: 10px;
 
-    height:
-        14px;
+    height: 14px;
 
-    background:
-        #6f4c5d;
+    background: #6f4c5d;
 
-    border-radius:
-        50%;
+    border-radius: 50%;
 
-    position:
-        absolute;
+    position: absolute;
 
-    top:
-        48px;
-
+    top: 48px;
 }
 
 .eye.left {
-
-    left:
-        36px;
-
+    left: 36px;
 }
 
 .eye.right {
-
-    right:
-        36px;
-
+    right: 36px;
 }
 
 .nose {
 
-    position:
-        absolute;
+    position: absolute;
 
-    left:
-        54px;
+    left: 54px;
 
-    top:
-        67px;
+    top: 67px;
 
-    width:
-        12px;
+    width: 12px;
 
-    height:
-        9px;
+    height: 9px;
 
-    background:
-        #e78cae;
+    background: #e78cae;
 
-    border-radius:
-        50%;
-
+    border-radius: 50%;
 }
 
 .mouth {
 
-    position:
-        absolute;
+    position: absolute;
 
-    left:
-        50px;
+    left: 50px;
 
-    top:
-        76px;
+    top: 76px;
 
-    width:
-        22px;
+    width: 22px;
 
-    height:
-        12px;
+    height: 12px;
 
     border-bottom:
         3px
@@ -547,118 +420,88 @@ p {
         0
         50%
         50%;
-
 }
 
 .whisker {
 
-    position:
-        absolute;
+    position: absolute;
 
-    width:
-        35px;
+    width: 35px;
 
-    height:
-        1px;
+    height: 1px;
 
-    background:
-        #d99bb5;
+    background: #d99bb5;
 
-    top:
-        72px;
-
+    top: 72px;
 }
 
 .w1 {
 
-    left:
-        2px;
+    left: 2px;
 
     transform:
         rotate(10deg);
-
 }
 
 .w2 {
 
-    left:
-        0;
+    left: 0;
 
-    top:
-        82px;
+    top: 82px;
 
     transform:
         rotate(-8deg);
-
 }
 
 .w3 {
 
-    right:
-        2px;
+    right: 2px;
 
     transform:
         rotate(-10deg);
-
 }
 
 .w4 {
 
-    right:
-        0;
+    right: 0;
 
-    top:
-        82px;
+    top: 82px;
 
     transform:
         rotate(8deg);
-
 }
 
 .bow {
 
-    position:
-        absolute;
+    position: absolute;
 
-    top:
-        0;
+    top: 0;
 
-    left:
-        51px;
+    left: 51px;
 
-    z-index:
-        2;
+    z-index: 2;
 
-    color:
-        #ef91b4;
+    color: #ef91b4;
 
-    font-size:
-        30px;
-
+    font-size: 30px;
 }
 
 @keyframes float {
 
     50% {
-
         transform:
-            translateY(
-                -8px
-            );
-
+            translateY(-8px);
     }
-
 }
 
 
 /* ========================================
-   APPRECIATION CARDS
+   APPRECIATION PAW CARDS
 ======================================== */
 
 .paws {
 
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         repeat(
@@ -669,12 +512,9 @@ p {
             )
         );
 
-    gap:
-        16px;
+    gap: 16px;
 
-    margin-top:
-        28px;
-
+    margin-top: 28px;
 }
 
 .paw {
@@ -684,22 +524,17 @@ p {
         solid
         #f6d0df;
 
-    background:
-        #ffffff;
+    background: #ffffff;
 
-    border-radius:
-        24px;
+    border-radius: 24px;
 
     padding:
         20px
         12px;
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 
-    min-height:
-        120px;
-
+    min-height: 120px;
 }
 
 .paw:hover {
@@ -710,41 +545,29 @@ p {
 
     box-shadow:
         var(--shadow);
-
 }
 
 .paw .emoji {
 
-    font-size:
-        2.2rem;
-
+    font-size: 2.2rem;
 }
 
 .reveal {
 
-    display:
-        none;
+    display: none;
 
-    margin-top:
-        18px;
+    margin-top: 18px;
 
-    padding:
-        16px;
+    padding: 16px;
 
-    background:
-        #fff5fa;
+    background: #fff5fa;
 
-    border-radius:
-        18px;
-
+    border-radius: 18px;
 }
 
-.paw.active
-.reveal {
+.paw.active .reveal {
 
-    display:
-        block;
-
+    display: block;
 }
 
 
@@ -754,31 +577,25 @@ p {
 
 .letter {
 
-    text-align:
-        left;
+    text-align: left;
 
-    background:
-        #fffafa;
+    background: #fffafa;
 
     border:
         1px
         solid
         #f6d5e1;
 
-    border-radius:
-        24px;
+    border-radius: 24px;
 
-    padding:
-        26px;
+    padding: 26px;
 
-    max-width:
-        720px;
+    max-width: 720px;
 
     margin:
         24px
         auto
         0;
-
 }
 
 .letter p {
@@ -787,12 +604,11 @@ p {
         0
         0
         16px;
-
 }
 
 
 /* ========================================
-   PRAYER
+   PRAYER / FUTURE
 ======================================== */
 
 .blessing {
@@ -804,30 +620,25 @@ p {
             #ffffff
         );
 
-    border-radius:
-        28px;
+    border-radius: 28px;
 
-    padding:
-        30px;
+    padding: 30px;
 
-    max-width:
-        720px;
+    max-width: 720px;
 
     margin:
         25px
         auto;
-
 }
 
 
 /* ========================================
-   CAT GAME
+   CAT CHOICE GAME
 ======================================== */
 
 .cats-choice {
 
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         repeat(
@@ -835,12 +646,9 @@ p {
             1fr
         );
 
-    gap:
-        16px;
+    gap: 16px;
 
-    margin-top:
-        25px;
-
+    margin-top: 25px;
 }
 
 .choice {
@@ -850,51 +658,37 @@ p {
         solid
         #f5cddd;
 
-    background:
-        white;
+    background: white;
 
-    border-radius:
-        25px;
+    border-radius: 25px;
 
     padding:
         25px
         12px;
 
-    transition:
-        0.2s;
-
+    transition: 0.2s;
 }
 
 .choice:hover {
 
     transform:
-        scale(
-            1.03
-        );
-
+        scale(1.03);
 }
 
 .choice .mini {
 
-    font-size:
-        3.5rem;
-
+    font-size: 3.5rem;
 }
 
 .choice-message {
 
-    min-height:
-        70px;
+    min-height: 70px;
 
-    margin-top:
-        20px;
+    margin-top: 20px;
 
-    font-weight:
-        600;
+    font-weight: 600;
 
-    color:
-        var(--deep);
-
+    color: var(--deep);
 }
 
 
@@ -904,49 +698,36 @@ p {
 
 .final {
 
-    display:
-        none;
-
+    display: none;
 }
 
 .final.show {
 
-    display:
-        flex;
+    display: flex;
 
     animation:
         pop
         0.6s
         ease;
-
 }
 
 @keyframes pop {
 
     from {
 
-        opacity:
-            0;
+        opacity: 0;
 
         transform:
-            scale(
-                0.92
-            );
-
+            scale(0.92);
     }
 
     to {
 
-        opacity:
-            1;
+        opacity: 1;
 
         transform:
-            scale(
-                1
-            );
-
+            scale(1);
     }
-
 }
 
 
@@ -956,23 +737,18 @@ p {
 
 .floating {
 
-    position:
-        fixed;
+    position: fixed;
 
-    bottom:
-        -30px;
+    bottom: -30px;
 
-    pointer-events:
-        none;
+    pointer-events: none;
 
     animation:
         rise
         linear
         forwards;
 
-    z-index:
-        10;
-
+    z-index: 10;
 }
 
 @keyframes rise {
@@ -980,39 +756,41 @@ p {
     to {
 
         transform:
-            translateY(
-                -110vh
-            )
-            rotate(
-                30deg
-            );
+            translateY(-110vh)
+            rotate(30deg);
 
-        opacity:
-            0;
-
+        opacity: 0;
     }
-
 }
 
 
 /* ========================================
-   FOOTER
+   OTHER DECORATION
 ======================================== */
+
+.sparkle {
+
+    font-size: 1.4rem;
+}
+
+.dots {
+
+    margin-top: 25px;
+
+    color: #e78cae;
+
+    letter-spacing: 6px;
+}
 
 footer {
 
-    text-align:
-        center;
+    text-align: center;
 
-    padding:
-        25px;
+    padding: 25px;
 
-    color:
-        #a8798e;
+    color: #a8798e;
 
-    font-size:
-        0.9rem;
-
+    font-size: 0.9rem;
 }
 
 
@@ -1020,10 +798,7 @@ footer {
    MOBILE
 ======================================== */
 
-@media (
-    max-width:
-    600px
-) {
+@media (max-width: 600px) {
 
     .card {
 
@@ -1031,42 +806,31 @@ footer {
             38px
             18px;
 
-        border-radius:
-            28px;
-
+        border-radius: 28px;
     }
 
     .cats-choice {
 
-        grid-template-columns:
-            1fr;
-
+        grid-template-columns: 1fr;
     }
 
     .paw {
 
-        min-height:
-            auto;
-
+        min-height: auto;
     }
 
     .music-btn {
 
-        top:
-            12px;
+        top: 12px;
 
-        left:
-            12px;
+        left: 12px;
 
-        font-size:
-            0.85rem;
+        font-size: 0.85rem;
 
         padding:
             10px
             15px;
-
     }
-
 }
 
 </style>
@@ -1080,17 +844,18 @@ footer {
      SPOTIFY BUTTON
 ======================================== -->
 
-<a
+<button
     class="music-btn"
-    href="https://open.spotify.com/track/5JbnupagBhD0AanbkCELdH?si=L0aY48E7QRO35VUlbo0f4Q&utm_source=copy-link"
-    target="_blank"
-    rel="noopener noreferrer"
+    onclick="openSpotify()"
 >
 
-    🎵 Play our song ♡
+    🎵
 
-</a>
+    <span>
+        Play our song ♡
+    </span>
 
+</button>
 
 
 <!-- ========================================
@@ -1104,7 +869,6 @@ footer {
 
     <div class="card">
 
-
         <div
             class="cat"
             aria-label="cute cat"
@@ -1114,47 +878,27 @@ footer {
                 🎀
             </div>
 
-            <div
-                class="ear left"
-            ></div>
+            <div class="ear left"></div>
 
-            <div
-                class="ear right"
-            ></div>
+            <div class="ear right"></div>
 
             <div class="head">
 
-                <div
-                    class="eye left"
-                ></div>
+                <div class="eye left"></div>
 
-                <div
-                    class="eye right"
-                ></div>
+                <div class="eye right"></div>
 
-                <div
-                    class="nose"
-                ></div>
+                <div class="nose"></div>
 
-                <div
-                    class="mouth"
-                ></div>
+                <div class="mouth"></div>
 
-                <div
-                    class="whisker w1"
-                ></div>
+                <div class="whisker w1"></div>
 
-                <div
-                    class="whisker w2"
-                ></div>
+                <div class="whisker w2"></div>
 
-                <div
-                    class="whisker w3"
-                ></div>
+                <div class="whisker w3"></div>
 
-                <div
-                    class="whisker w4"
-                ></div>
+                <div class="whisker w4"></div>
 
             </div>
 
@@ -1195,23 +939,13 @@ footer {
         </button>
 
 
-        <div
-            style="
-                margin-top:25px;
-                color:#e78cae;
-                letter-spacing:6px;
-            "
-        >
-
+        <div class="dots">
             • • •
-
         </div>
-
 
     </div>
 
 </section>
-
 
 
 <!-- ========================================
@@ -1225,11 +959,9 @@ footer {
 
     <div class="card">
 
-
         <h2>
             Happy Girlfriend Day! 🎀
         </h2>
-
 
         <p class="subtitle">
 
@@ -1354,7 +1086,6 @@ footer {
 
             </button>
 
-
         </div>
 
 
@@ -1363,24 +1094,16 @@ footer {
 
         <button
             class="btn secondary"
-            onclick="
-                document
-                .getElementById('letter')
-                .scrollIntoView({
-                    behavior:'smooth'
-                })
-            "
+            onclick="scrollToSection('letter')"
         >
 
             There's more ♡
 
         </button>
 
-
     </div>
 
 </section>
-
 
 
 <!-- ========================================
@@ -1394,7 +1117,6 @@ footer {
 
     <div class="card">
 
-
         <h2>
             A Little Letter For You 💌
         </h2>
@@ -1402,11 +1124,9 @@ footer {
 
         <div class="letter">
 
-
             <p>
                 Hey you,
             </p>
-
 
             <p>
 
@@ -1499,30 +1219,21 @@ footer {
 
             </p>
 
-
         </div>
 
 
         <button
             class="btn"
-            onclick="
-                document
-                .getElementById('future')
-                .scrollIntoView({
-                    behavior:'smooth'
-                })
-            "
+            onclick="scrollToSection('future')"
         >
 
             A little prayer ♡
 
         </button>
 
-
     </div>
 
 </section>
-
 
 
 <!-- ========================================
@@ -1536,17 +1247,13 @@ footer {
 
     <div class="card">
 
-
         <h2>
-
             For Our Future,
             Whatever It May Be 🤍
-
         </h2>
 
 
         <div class="blessing">
-
 
             <div
                 class="cat"
@@ -1560,31 +1267,19 @@ footer {
                     🎀
                 </div>
 
-                <div
-                    class="ear left"
-                ></div>
+                <div class="ear left"></div>
 
-                <div
-                    class="ear right"
-                ></div>
+                <div class="ear right"></div>
 
                 <div class="head">
 
-                    <div
-                        class="eye left"
-                    ></div>
+                    <div class="eye left"></div>
 
-                    <div
-                        class="eye right"
-                    ></div>
+                    <div class="eye right"></div>
 
-                    <div
-                        class="nose"
-                    ></div>
+                    <div class="nose"></div>
 
-                    <div
-                        class="mouth"
-                    ></div>
+                    <div class="mouth"></div>
 
                 </div>
 
@@ -1592,10 +1287,8 @@ footer {
 
 
             <p>
-
                 I don't know exactly what
                 God has planned for us.
-
             </p>
 
 
@@ -1654,30 +1347,21 @@ footer {
 
             </p>
 
-
         </div>
 
 
         <button
             class="btn"
-            onclick="
-                document
-                .getElementById('game')
-                .scrollIntoView({
-                    behavior:'smooth'
-                })
-            "
+            onclick="scrollToSection('game')"
         >
 
             One more surprise 🐾
 
         </button>
 
-
     </div>
 
 </section>
-
 
 
 <!-- ========================================
@@ -1690,7 +1374,6 @@ footer {
 >
 
     <div class="card">
-
 
         <h2>
             Pick a Cat 🐱
@@ -1761,7 +1444,6 @@ footer {
 
             </button>
 
-
         </div>
 
 
@@ -1785,11 +1467,9 @@ footer {
 
         </button>
 
-
     </div>
 
 </section>
-
 
 
 <!-- ========================================
@@ -1803,7 +1483,6 @@ footer {
 
     <div class="card">
 
-
         <div
             style="
                 font-size:5rem;
@@ -1816,9 +1495,7 @@ footer {
 
 
         <h2>
-
             One Last Thing...
-
         </h2>
 
 
@@ -1837,7 +1514,6 @@ footer {
 
 
         <div class="letter">
-
 
             <p>
 
@@ -1910,7 +1586,6 @@ footer {
 
             </p>
 
-
         </div>
 
 
@@ -1932,11 +1607,9 @@ footer {
             "
         ></p>
 
-
     </div>
 
 </section>
-
 
 
 <!-- ========================================
@@ -1954,7 +1627,6 @@ footer {
 </footer>
 
 
-
 <!-- ========================================
      JAVASCRIPT
 ======================================== -->
@@ -1963,19 +1635,43 @@ footer {
 
 
 /* ========================================
+   OPEN SPOTIFY
+======================================== */
+
+function openSpotify() {
+
+    window.open(
+        "https://open.spotify.com/track/5JbnupagBhD0AanbkCELdH?si=L0aY48E7QRO35VUlbo0f4Q&utm_source=copy-link",
+        "_blank"
+    );
+
+}
+
+
+/* ========================================
+   SCROLL TO SECTION
+======================================== */
+
+function scrollToSection(id) {
+
+    document
+        .getElementById(id)
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+/* ========================================
    OPEN APPRECIATION
 ======================================== */
 
 function openLetter() {
 
-    document
-        .getElementById(
-            'appreciation'
-        )
-        .scrollIntoView({
-            behavior:
-                'smooth'
-        });
+    scrollToSection(
+        "appreciation"
+    );
 
     hearts(12);
 
@@ -1989,7 +1685,7 @@ function openLetter() {
 function togglePaw(el) {
 
     el.classList.toggle(
-        'active'
+        "active"
     );
 
     hearts(3);
@@ -2016,7 +1712,7 @@ function chooseCat(i) {
 
     document
         .getElementById(
-            'choiceMessage'
+            "choiceMessage"
         )
         .textContent =
             messages[i];
@@ -2027,23 +1723,22 @@ function chooseCat(i) {
 
 
 /* ========================================
-   SHOW FINAL
+   SHOW FINAL MESSAGE
 ======================================== */
 
 function showFinal() {
 
     const f =
         document.getElementById(
-            'final'
+            "final"
         );
 
     f.classList.add(
-        'show'
+        "show"
     );
 
     f.scrollIntoView({
-        behavior:
-            'smooth'
+        behavior: "smooth"
     });
 
     hearts(20);
@@ -2068,58 +1763,49 @@ function hearts(n) {
 
                 const x =
                     document.createElement(
-                        'div'
+                        "div"
                     );
 
                 x.className =
-                    'floating';
+                    "floating";
 
                 x.textContent =
                     [
-                        '♡',
-                        '💗',
-                        '🎀',
-                        '✨',
-                        '🐾'
+                        "♡",
+                        "💗",
+                        "🎀",
+                        "✨",
+                        "🐾"
                     ][
                         Math.floor(
-                            Math.random()
-                            * 5
+                            Math.random() * 5
                         )
                     ];
 
                 x.style.left =
-                    Math.random()
-                    * 100
-                    + 'vw';
+                    Math.random() * 100
+                    + "vw";
 
                 x.style.fontSize =
                     (
-                        14
-                        +
-                        Math.random()
-                        * 22
+                        14 +
+                        Math.random() * 22
                     )
-                    + 'px';
+                    + "px";
 
                 x.style.animationDuration =
                     (
-                        3
-                        +
-                        Math.random()
-                        * 3
+                        3 +
+                        Math.random() * 3
                     )
-                    + 's';
+                    + "s";
 
                 document
                     .body
-                    .appendChild(
-                        x
-                    );
+                    .appendChild(x);
 
                 setTimeout(
-                    () =>
-                        x.remove(),
+                    () => x.remove(),
                     6500
                 );
 
@@ -2142,13 +1828,12 @@ function celebrate() {
 
     document
         .getElementById(
-            'celebrateText'
+            "celebrateText"
         )
         .textContent =
             "Okay, that's all. But you can never have too many hearts. ♡";
 
 }
-
 
 </script>
 
