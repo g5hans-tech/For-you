@@ -18,7 +18,7 @@
     z-index: 1000;
 
     background: rgba(255, 255, 255, 0.95);
-    color: #c85f8e;
+    color: #9
 
     border: 1px solid #f3c4d6;
     border-radius: 999px;
@@ -326,6 +326,34 @@ function celebrate(){
   hearts(50);
   document.getElementById('celebrateText').textContent="Okay, that's all. But you can never have too many hearts. ♡";
 }
+
+  const bgMusic = document.getElementById("bgMusic");
+const musicText = document.getElementById("musicText");
+const musicButton = document.querySelector(".music-btn");
+
+function toggleMusic() {
+
+    if (bgMusic.paused) {
+
+        bgMusic.play();
+
+        musicText.textContent = "Playing our song ♡";
+
+        musicButton.classList.add("playing");
+
+    } else {
+
+        bgMusic.pause();
+
+        musicText.textContent = "Play our song ♡";
+
+        musicButton.classList.remove("playing");
+
+    }
+
+}
+
 </script>
+
 </body>
 </html>
