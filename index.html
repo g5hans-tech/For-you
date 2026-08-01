@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For the Sweetest Girl ♡</title>
 
 <style>
 
-/* ========================================
-   BASIC WEBSITE SETTINGS
-======================================== */
+/* ================================
+   BASIC SETTINGS
+================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
 
@@ -39,7 +37,9 @@ html {
 body {
     margin: 0;
 
-    font-family: "DM Sans", sans-serif;
+    font-family:
+        "DM Sans",
+        sans-serif;
 
     color: var(--text);
 
@@ -60,9 +60,9 @@ button {
 }
 
 
-/* ========================================
-   MUSIC PLAYER
-======================================== */
+/* ================================
+   MUSIC BUTTON
+================================ */
 
 .music-btn {
 
@@ -81,14 +81,9 @@ button {
     color: var(--deep);
 
     padding:
-        11px
-        18px;
+        11px 18px;
 
     border-radius: 999px;
-
-    font-family:
-        "DM Sans",
-        sans-serif;
 
     font-weight: 600;
 
@@ -96,33 +91,22 @@ button {
         0 8px 20px
         rgba(200, 95, 142, 0.15);
 
-    cursor: pointer;
-
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 .music-btn:hover {
-
-    transform:
-        translateY(-2px);
-
+    transform: translateY(-2px);
 }
 
 .music-btn.playing {
-
-    background:
-        var(--deep);
-
-    color:
-        white;
-
+    background: var(--deep);
+    color: white;
 }
 
 
-/* ========================================
-   FULL SCREEN SECTIONS
-======================================== */
+/* ================================
+   SECTIONS
+================================ */
 
 .screen {
 
@@ -135,16 +119,15 @@ button {
     justify-content: center;
 
     padding:
-        28px
-        18px;
+        28px 18px;
 
     position: relative;
 }
 
 
-/* ========================================
-   MAIN CARDS
-======================================== */
+/* ================================
+   CARDS
+================================ */
 
 .card {
 
@@ -175,8 +158,7 @@ button {
         var(--shadow);
 
     padding:
-        48px
-        28px;
+        48px 28px;
 
     text-align:
         center;
@@ -186,17 +168,15 @@ button {
 }
 
 
-/* ========================================
+/* ================================
    HEADINGS
-======================================== */
+================================ */
 
 h1,
 h2 {
 
     margin:
-        0
-        0
-        14px;
+        0 0 14px;
 
 }
 
@@ -218,7 +198,6 @@ h1 {
 
     color:
         var(--deep);
-
 }
 
 h2 {
@@ -232,13 +211,12 @@ h2 {
 
     color:
         var(--deep);
-
 }
 
 
-/* ========================================
+/* ================================
    TEXT
-======================================== */
+================================ */
 
 p {
 
@@ -247,7 +225,6 @@ p {
 
     font-size:
         1rem;
-
 }
 
 .subtitle {
@@ -259,16 +236,13 @@ p {
         620px;
 
     margin:
-        0
-        auto
-        28px;
-
+        0 auto 28px;
 }
 
 
-/* ========================================
+/* ================================
    BUTTONS
-======================================== */
+================================ */
 
 .btn {
 
@@ -282,15 +256,13 @@ p {
         white;
 
     padding:
-        14px
-        24px;
+        14px 24px;
 
     border-radius:
         999px;
 
     box-shadow:
-        0 8px
-        20px
+        0 8px 20px
         rgba(
             200,
             95,
@@ -300,7 +272,6 @@ p {
 
     transition:
         0.2s;
-
 }
 
 .btn:hover {
@@ -310,7 +281,6 @@ p {
 
     filter:
         brightness(1.04);
-
 }
 
 .btn.secondary {
@@ -324,13 +294,12 @@ p {
     border:
         1px solid
         #f2c4d7;
-
 }
 
 
-/* ========================================
-   CUTE CSS CAT
-======================================== */
+/* ================================
+   CUTE CAT
+================================ */
 
 .cat {
 
@@ -341,9 +310,7 @@ p {
         120px;
 
     margin:
-        0
-        auto
-        25px;
+        0 auto 25px;
 
     position:
         relative;
@@ -353,7 +320,6 @@ p {
         3s
         ease-in-out
         infinite;
-
 }
 
 .cat .head {
@@ -368,15 +334,11 @@ p {
         white;
 
     border:
-        4px
-        solid
+        4px solid
         #f1bfd2;
 
     border-radius:
-        48%
-        48%
-        45%
-        45%;
+        48% 48% 45% 45%;
 
     position:
         absolute;
@@ -388,15 +350,13 @@ p {
         18px;
 
     box-shadow:
-        0 8px
-        20px
+        0 8px 20px
         rgba(
             200,
             95,
             142,
             0.12
         );
-
 }
 
 .ear {
@@ -411,8 +371,7 @@ p {
         white;
 
     border:
-        4px
-        solid
+        4px solid
         #f1bfd2;
 
     position:
@@ -426,21 +385,14 @@ p {
 
     transform:
         rotate(45deg);
-
 }
 
 .ear.left {
-
-    left:
-        10px;
-
+    left: 10px;
 }
 
 .ear.right {
-
-    right:
-        10px;
-
+    right: 10px;
 }
 
 .eye {
@@ -462,21 +414,14 @@ p {
 
     top:
         48px;
-
 }
 
 .eye.left {
-
-    left:
-        36px;
-
+    left: 36px;
 }
 
 .eye.right {
-
-    right:
-        36px;
-
+    right: 36px;
 }
 
 .nose {
@@ -501,7 +446,6 @@ p {
 
     border-radius:
         50%;
-
 }
 
 .mouth {
@@ -522,16 +466,11 @@ p {
         12px;
 
     border-bottom:
-        3px
-        solid
+        3px solid
         #6f4c5d;
 
     border-radius:
-        0
-        0
-        50%
-        50%;
-
+        0 0 50% 50%;
 }
 
 .whisker {
@@ -550,53 +489,28 @@ p {
 
     top:
         72px;
-
 }
 
 .w1 {
-
-    left:
-        2px;
-
-    transform:
-        rotate(10deg);
-
+    left: 2px;
+    transform: rotate(10deg);
 }
 
 .w2 {
-
-    left:
-        0;
-
-    top:
-        82px;
-
-    transform:
-        rotate(-8deg);
-
+    left: 0;
+    top: 82px;
+    transform: rotate(-8deg);
 }
 
 .w3 {
-
-    right:
-        2px;
-
-    transform:
-        rotate(-10deg);
-
+    right: 2px;
+    transform: rotate(-10deg);
 }
 
 .w4 {
-
-    right:
-        0;
-
-    top:
-        82px;
-
-    transform:
-        rotate(8deg);
-
+    right: 0;
+    top: 82px;
+    transform: rotate(8deg);
 }
 
 .bow {
@@ -613,29 +527,23 @@ p {
     z-index:
         2;
 
-    color:
-        #ef91b4;
-
     font-size:
         30px;
-
 }
 
 @keyframes float {
 
     50% {
-
         transform:
             translateY(-8px);
-
     }
 
 }
 
 
-/* ========================================
-   APPRECIATION PAW CARDS
-======================================== */
+/* ================================
+   PAW CARDS
+================================ */
 
 .paws {
 
@@ -656,14 +564,12 @@ p {
 
     margin-top:
         28px;
-
 }
 
 .paw {
 
     border:
-        2px
-        solid
+        2px solid
         #f6d0df;
 
     background:
@@ -673,15 +579,13 @@ p {
         24px;
 
     padding:
-        20px
-        12px;
+        20px 12px;
 
     transition:
         0.25s;
 
     min-height:
         120px;
-
 }
 
 .paw:hover {
@@ -692,14 +596,12 @@ p {
 
     box-shadow:
         var(--shadow);
-
 }
 
 .paw .emoji {
 
     font-size:
         2.2rem;
-
 }
 
 .reveal {
@@ -718,20 +620,16 @@ p {
 
     border-radius:
         18px;
-
 }
 
 .paw.active .reveal {
-
-    display:
-        block;
-
+    display: block;
 }
 
 
-/* ========================================
+/* ================================
    LETTER
-======================================== */
+================================ */
 
 .letter {
 
@@ -742,8 +640,7 @@ p {
         #fffafa;
 
     border:
-        1px
-        solid
+        1px solid
         #f6d5e1;
 
     border-radius:
@@ -756,25 +653,19 @@ p {
         720px;
 
     margin:
-        24px
-        auto
-        0;
-
+        24px auto 0;
 }
 
 .letter p {
 
     margin:
-        0
-        0
-        16px;
-
+        0 0 16px;
 }
 
 
-/* ========================================
-   PRAYER / FUTURE SECTION
-======================================== */
+/* ================================
+   BLESSING
+================================ */
 
 .blessing {
 
@@ -795,15 +686,13 @@ p {
         720px;
 
     margin:
-        25px
-        auto;
-
+        25px auto;
 }
 
 
-/* ========================================
-   CAT CHOICE GAME
-======================================== */
+/* ================================
+   CAT GAME
+================================ */
 
 .cats-choice {
 
@@ -821,14 +710,12 @@ p {
 
     margin-top:
         25px;
-
 }
 
 .choice {
 
     border:
-        2px
-        solid
+        2px solid
         #f5cddd;
 
     background:
@@ -838,26 +725,20 @@ p {
         25px;
 
     padding:
-        25px
-        12px;
+        25px 12px;
 
     transition:
         0.2s;
-
 }
 
 .choice:hover {
-
     transform:
         scale(1.03);
-
 }
 
 .choice .mini {
-
     font-size:
         3.5rem;
-
 }
 
 .choice-message {
@@ -873,31 +754,27 @@ p {
 
     color:
         var(--deep);
-
 }
 
 
-/* ========================================
-   FINAL SURPRISE
-======================================== */
+/* ================================
+   FINAL
+================================ */
 
 .final {
-
     display:
         none;
-
 }
 
 .final.show {
 
     display:
-        block;
+        flex;
 
     animation:
         pop
         0.6s
         ease;
-
 }
 
 @keyframes pop {
@@ -908,10 +785,7 @@ p {
             0;
 
         transform:
-            scale(
-                0.92
-            );
-
+            scale(0.92);
     }
 
     to {
@@ -920,18 +794,15 @@ p {
             1;
 
         transform:
-            scale(
-                1
-            );
-
+            scale(1);
     }
 
 }
 
 
-/* ========================================
+/* ================================
    FLOATING HEARTS
-======================================== */
+================================ */
 
 .floating {
 
@@ -951,7 +822,6 @@ p {
 
     z-index:
         10;
-
 }
 
 @keyframes rise {
@@ -959,30 +829,23 @@ p {
     to {
 
         transform:
-            translateY(
-                -110vh
-            )
-            rotate(
-                30deg
-            );
+            translateY(-110vh)
+            rotate(30deg);
 
         opacity:
             0;
-
     }
 
 }
 
 
-/* ========================================
-   OTHER DECORATION
-======================================== */
+/* ================================
+   OTHER
+================================ */
 
 .sparkle {
-
     font-size:
         1.4rem;
-
 }
 
 .dots {
@@ -995,7 +858,6 @@ p {
 
     letter-spacing:
         6px;
-
 }
 
 footer {
@@ -1011,41 +873,34 @@ footer {
 
     font-size:
         0.9rem;
-
 }
 
 
-/* ========================================
-   MOBILE PHONE
-======================================== */
+/* ================================
+   MOBILE
+================================ */
 
-@media (
-    max-width: 600px
-) {
+@media (max-width: 600px) {
 
     .card {
 
         padding:
-            38px
-            18px;
+            38px 18px;
 
         border-radius:
             28px;
-
     }
 
     .cats-choice {
 
         grid-template-columns:
             1fr;
-
     }
 
     .paw {
 
         min-height:
             auto;
-
     }
 
     .music-btn {
@@ -1060,9 +915,7 @@ footer {
             0.85rem;
 
         padding:
-            10px
-            15px;
-
+            10px 15px;
     }
 
 }
@@ -1075,29 +928,43 @@ footer {
 <body>
 
 
-<!-- ========================================
+<!-- =================================================
      BACKGROUND MUSIC
-======================================== -->
+     
+     IMPORTANT:
+     Your GitHub repository should contain:
+
+     index.html
+     music/
+         song.mp3
+
+     If your MP3 has a different filename,
+     change "song.mp3" below.
+================================================= -->
 
 <audio
     id="bgMusic"
     loop
+    preload="auto"
 >
 
     <source
-        src="music/song.mp3"
+        src="./music/song.mp3"
         type="audio/mpeg"
     >
+
+    Your browser does not support audio.
 
 </audio>
 
 
-<!-- ========================================
+<!-- =================================================
      MUSIC BUTTON
-======================================== -->
+================================================= -->
 
 <button
     class="music-btn"
+    id="musicButton"
     onclick="toggleMusic()"
 >
 
@@ -1111,9 +978,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      HOME
-======================================== -->
+================================================= -->
 
 <section
     class="screen"
@@ -1122,8 +989,6 @@ footer {
 
     <div class="card">
 
-
-        <!-- CAT -->
 
         <div
             class="cat"
@@ -1134,47 +999,27 @@ footer {
                 🎀
             </div>
 
-            <div
-                class="ear left"
-            ></div>
+            <div class="ear left"></div>
 
-            <div
-                class="ear right"
-            ></div>
+            <div class="ear right"></div>
 
             <div class="head">
 
-                <div
-                    class="eye left"
-                ></div>
+                <div class="eye left"></div>
 
-                <div
-                    class="eye right"
-                ></div>
+                <div class="eye right"></div>
 
-                <div
-                    class="nose"
-                ></div>
+                <div class="nose"></div>
 
-                <div
-                    class="mouth"
-                ></div>
+                <div class="mouth"></div>
 
-                <div
-                    class="whisker w1"
-                ></div>
+                <div class="whisker w1"></div>
 
-                <div
-                    class="whisker w2"
-                ></div>
+                <div class="whisker w2"></div>
 
-                <div
-                    class="whisker w3"
-                ></div>
+                <div class="whisker w3"></div>
 
-                <div
-                    class="whisker w4"
-                ></div>
+                <div class="whisker w4"></div>
 
             </div>
 
@@ -1226,9 +1071,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      APPRECIATION
-======================================== -->
+================================================= -->
 
 <section
     class="screen"
@@ -1260,8 +1105,6 @@ footer {
         <div class="paws">
 
 
-            <!-- SMILE -->
-
             <button
                 class="paw"
                 onclick="togglePaw(this)"
@@ -1289,7 +1132,6 @@ footer {
             </button>
 
 
-            <!-- HEART -->
 
             <button
                 class="paw"
@@ -1316,7 +1158,6 @@ footer {
             </button>
 
 
-            <!-- PRESENCE -->
 
             <button
                 class="paw"
@@ -1344,7 +1185,6 @@ footer {
             </button>
 
 
-            <!-- JUST YOU -->
 
             <button
                 class="paw"
@@ -1383,7 +1223,13 @@ footer {
 
         <button
             class="btn secondary"
-            onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})"
+            onclick="
+                document
+                .getElementById('letter')
+                .scrollIntoView({
+                    behavior:'smooth'
+                })
+            "
         >
 
             There's more ♡
@@ -1397,9 +1243,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      LOVE LETTER
-======================================== -->
+================================================= -->
 
 <section
     class="screen"
@@ -1519,7 +1365,13 @@ footer {
 
         <button
             class="btn"
-            onclick="document.getElementById('future').scrollIntoView({behavior:'smooth'})"
+            onclick="
+                document
+                .getElementById('future')
+                .scrollIntoView({
+                    behavior:'smooth'
+                })
+            "
         >
 
             A little prayer ♡
@@ -1533,9 +1385,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      FUTURE / GOD
-======================================== -->
+================================================= -->
 
 <section
     class="screen"
@@ -1568,31 +1420,19 @@ footer {
                     🎀
                 </div>
 
-                <div
-                    class="ear left"
-                ></div>
+                <div class="ear left"></div>
 
-                <div
-                    class="ear right"
-                ></div>
+                <div class="ear right"></div>
 
                 <div class="head">
 
-                    <div
-                        class="eye left"
-                    ></div>
+                    <div class="eye left"></div>
 
-                    <div
-                        class="eye right"
-                    ></div>
+                    <div class="eye right"></div>
 
-                    <div
-                        class="nose"
-                    ></div>
+                    <div class="nose"></div>
 
-                    <div
-                        class="mouth"
-                    ></div>
+                    <div class="mouth"></div>
 
                 </div>
 
@@ -1668,7 +1508,13 @@ footer {
 
         <button
             class="btn"
-            onclick="document.getElementById('game').scrollIntoView({behavior:'smooth'})"
+            onclick="
+                document
+                .getElementById('game')
+                .scrollIntoView({
+                    behavior:'smooth'
+                })
+            "
         >
 
             One more surprise 🐾
@@ -1682,9 +1528,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      CAT GAME
-======================================== -->
+================================================= -->
 
 <section
     class="screen"
@@ -1794,9 +1640,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      FINAL MESSAGE
-======================================== -->
+================================================= -->
 
 <section
     class="screen final"
@@ -1818,9 +1664,7 @@ footer {
 
 
         <h2>
-
             One Last Thing...
-
         </h2>
 
 
@@ -1941,9 +1785,9 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      FOOTER
-======================================== -->
+================================================= -->
 
 <footer>
 
@@ -1957,51 +1801,44 @@ footer {
 
 
 
-<!-- ========================================
+<!-- =================================================
      JAVASCRIPT
-======================================== -->
+================================================= -->
 
 <script>
 
 
-/* ========================================
-   OPEN APPRECIATION SECTION
-======================================== */
+/* ================================
+   OPEN APPRECIATION
+================================ */
 
 function openLetter() {
 
     document
-        .getElementById(
-            'appreciation'
-        )
+        .getElementById("appreciation")
         .scrollIntoView({
-            behavior:
-                'smooth'
+            behavior: "smooth"
         });
 
     hearts(12);
-
 }
 
 
-/* ========================================
+/* ================================
    PAW CARDS
-======================================== */
+================================ */
 
 function togglePaw(el) {
 
-    el.classList.toggle(
-        'active'
-    );
+    el.classList.toggle("active");
 
     hearts(3);
-
 }
 
 
-/* ========================================
+/* ================================
    CAT MESSAGES
-======================================== */
+================================ */
 
 const messages = [
 
@@ -2017,45 +1854,36 @@ const messages = [
 function chooseCat(i) {
 
     document
-        .getElementById(
-            'choiceMessage'
-        )
+        .getElementById("choiceMessage")
         .textContent =
-            messages[i];
+        messages[i];
 
     hearts(5);
-
 }
 
 
-/* ========================================
-   SHOW FINAL MESSAGE
-======================================== */
+/* ================================
+   SHOW FINAL
+================================ */
 
 function showFinal() {
 
     const f =
-        document.getElementById(
-            'final'
-        );
+        document.getElementById("final");
 
-    f.classList.add(
-        'show'
-    );
+    f.classList.add("show");
 
     f.scrollIntoView({
-        behavior:
-            'smooth'
+        behavior: "smooth"
     });
 
     hearts(20);
-
 }
 
 
-/* ========================================
+/* ================================
    FLOATING HEARTS
-======================================== */
+================================ */
 
 function hearts(n) {
 
@@ -2068,61 +1896,47 @@ function hearts(n) {
         setTimeout(() => {
 
             const x =
-                document.createElement(
-                    'div'
-                );
+                document.createElement("div");
 
             x.className =
-                'floating';
+                "floating";
 
             x.textContent =
                 [
-                    '♡',
-                    '💗',
-                    '🎀',
-                    '✨',
-                    '🐾'
+                    "♡",
+                    "💗",
+                    "🎀",
+                    "✨",
+                    "🐾"
                 ][
                     Math.floor(
-                        Math.random()
-                        * 5
+                        Math.random() * 5
                     )
                 ];
 
             x.style.left =
-                Math.random()
-                * 100
-                + 'vw';
+                Math.random() * 100 + "vw";
 
             x.style.fontSize =
                 (
-                    14
-                    +
-                    Math.random()
-                    * 22
-                )
-                + 'px';
+                    14 +
+                    Math.random() * 22
+                ) + "px";
 
             x.style.animationDuration =
                 (
-                    3
-                    +
-                    Math.random()
-                    * 3
-                )
-                + 's';
+                    3 +
+                    Math.random() * 3
+                ) + "s";
 
             document
                 .body
                 .appendChild(x);
 
-
             setTimeout(
-                () =>
-                    x.remove(),
+                () => x.remove(),
                 6500
             );
-
 
         }, i * 100);
 
@@ -2131,49 +1945,39 @@ function hearts(n) {
 }
 
 
-/* ========================================
+/* ================================
    FINAL CELEBRATION
-======================================== */
+================================ */
 
 function celebrate() {
 
     hearts(50);
 
     document
-        .getElementById(
-            'celebrateText'
-        )
+        .getElementById("celebrateText")
         .textContent =
-            "Okay, that's all. But you can never have too many hearts. ♡";
+        "Okay, that's all. But you can never have too many hearts. ♡";
 
 }
 
 
-/* ========================================
+/* ================================
    BACKGROUND MUSIC
-======================================== */
+================================ */
 
 const bgMusic =
-    document.getElementById(
-        "bgMusic"
-    );
+    document.getElementById("bgMusic");
 
 const musicText =
-    document.getElementById(
-        "musicText"
-    );
+    document.getElementById("musicText");
 
 const musicButton =
-    document.querySelector(
-        ".music-btn"
-    );
+    document.getElementById("musicButton");
 
 
 async function toggleMusic() {
 
-    if (
-        bgMusic.paused
-    ) {
+    if (bgMusic.paused) {
 
         try {
 
@@ -2190,8 +1994,8 @@ async function toggleMusic() {
 
         catch (error) {
 
-            console.log(
-                "Music could not play:",
+            console.error(
+                "Music error:",
                 error
             );
 
@@ -2217,28 +2021,8 @@ async function toggleMusic() {
 
 }
 
-
-/* ========================================
-   KEEP BUTTON STATE UPDATED
-======================================== */
-
-bgMusic.addEventListener(
-    "ended",
-    function() {
-
-        musicText.textContent =
-            "Play our song ♡";
-
-        musicButton.classList.remove(
-            "playing"
-        );
-
-    }
-);
-
 </script>
 
 
 </body>
-
 </html>
